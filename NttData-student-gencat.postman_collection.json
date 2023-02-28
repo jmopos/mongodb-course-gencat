@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "0f309b41-8ddc-4f24-8aa2-d4bbcf4fc91d",
+		"name": "NttData-student-gencat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25888322"
+	},
+	"item": [
+		{
+			"name": "GetStudents",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/Student",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddStudents",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"name\": \"Josep Maria\",\r\n  \"surname\": \"Gencat-Postman\",\r\n  \"age\": 42\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/Student",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Student"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
