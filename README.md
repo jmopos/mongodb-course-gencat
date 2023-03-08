@@ -13,5 +13,5 @@ mongosh "mongodb+srv://cluster0.dsb8fht.mongodb.net/school" --apiVersion 1 --use
 mongosh "mongodb+srv://cluster0.dsb8fht.mongodb.net/school" --apiVersion 1 --username jordi C:\Users\jordi\Downloads\mongosh-1.7.1-win32-x64\bin\scripts\GetStudents.js
 
 ### Python
--You must install firs pymongo via pip
+-You must install first pymongo via pip
 python -m pip install pymongo
