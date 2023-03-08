@@ -15,3 +15,7 @@ mongosh "mongodb+srv://cluster0.dsb8fht.mongodb.net/school" --apiVersion 1 --use
 ### Python
 -You must install first pymongo via pip
 python -m pip install pymongo
+
+### Markdown Cheatsheet
+[Exemples](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+
